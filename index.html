@@ -17,6 +17,7 @@
             gesture-detector
         >
             <a-marker
+                class="game-marker"
                 id="animated-marker"
                 type="barcode"
                 preset="custom"
@@ -38,4 +39,12 @@
             <a-entity camera></a-entity>
         </a-scene>
     </body>
+
+    <script>
+        for (const marker of document.getElementsByClassName("game-marker")){
+            marker.addEventListener("markerFound", () => {
+                alert("Marker found");
+            });
+        }
+    </script>
 </html>
