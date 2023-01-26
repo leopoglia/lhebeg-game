@@ -25,11 +25,13 @@
     </a-scene>
     <script>
         for (const marker of document.getElementsByClassName('game-marker')) {
-            setInterval(() => {
-                marker.addEventListener('markerFound', (e) => prompt("Qual o nome dessa pessoa? Só respostas erradas."));
-            }, 3000);
+            marker.addEventListener('markerFound', (e) => {
 
+                setInterval(() => {
+                    prompt("Qual o nome dessa pessoa? Só respostas erradas.");
+                }, 2000);
 
+            });
         }
     </script>
 </body>
