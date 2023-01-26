@@ -24,14 +24,18 @@
         </a-entity>
     </a-scene>
     <script>
-        marker.addEventListener('markerFound', (e) => {
+        for (const marker of document.getElementsByClassName('game-marker')) {
+            marker.addEventListener('markerFound', (e) => {
 
-            setInterval(() => {
+                setInterval(() => {
+                    alert("Você encontrou o Drácula!");
+                }, 4000);
+
                 prompt("Qual o nome dessa pessoa? Só respostas erradas.");
-            }, 2000);
 
-        });
 
+            });
+        }
     </script>
 </body>
 
