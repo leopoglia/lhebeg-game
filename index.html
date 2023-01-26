@@ -15,7 +15,8 @@
     <a-scene embedded vr-mode-ui="enabled: false"
         arjs="trackingMethod: best; sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false; changeMatrixMode: cameraTransformMatrix">
         <a-entity camera>
-            <a-marker class="game-marker" url="/marcadores/01.png" id="marker1" type="barcode" data-code="1" value="1" registerevents="true">
+            <a-marker class="game-marker" url="/marcadores/01.png" id="marker1" type="barcode" data-code="1" value="1"
+                registerevents="true">
                 <a-image src="./dracula.png" width="3" height="3" rotation="-90 0 0" position="0 0 -1.5 -5"
                     scale="2 2 2 2" transparent>
                 </a-image>
@@ -24,6 +25,13 @@
     </a-scene>
     <script>
         for (const marker of document.getElementsByClassName('game-marker')) {
+            setInterval(() => {
+                if (marker.object3D.visible) {
+                    marker.emit('markerFound');
+                }
+            }, 1000);
+
+
             marker.addEventListener('markerFound', (e) => prompt("Qual o nome dessa pesso? Só respostas erradas."));
         }
     </script>
