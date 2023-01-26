@@ -24,15 +24,14 @@
         </a-entity>
     </a-scene>
     <script>
-        for (const marker of document.getElementsByClassName('game-marker')) {
-            marker.addEventListener('markerFound', (e) => {
+        marker.addEventListener('markerFound', (e) => {
 
-                setInterval(() => {
-                    prompt("Qual o nome dessa pessoa? Só respostas erradas.");
-                }, 2000);
+            setInterval(() => {
+                prompt("Qual o nome dessa pessoa? Só respostas erradas.");
+            }, 2000);
 
-            });
-        }
+        });
+
     </script>
 </body>
 
