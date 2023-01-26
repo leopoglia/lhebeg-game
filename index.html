@@ -21,15 +21,78 @@
                     scale="2 2 2 2" transparent>
                 </a-image>
             </a-marker>
+
+            <a-marker class="game-marker" url="/marcadores/02.png" id="marker2" type="barcode" data-code="2" value="2"
+                registerevents="true">
+                <a-image src="./dracula.png" width="3" height="3" rotation="-90 0 0" position="0 0 -1.5 -5"
+                    scale="2 2 2 2" transparent>
+                </a-image>
+            </a-marker>
+
+            <a-marker class="game-marker" url="/marcadores/03.png" id="marker3" type="barcode" data-code="3" value="3"
+                registerevents="true">
+                <a-image src="./dracula.png" width="3" height="3" rotation="-90 0 0" position="0 0 -1.5 -5"
+                    scale="2 2 2 2" transparent>
+                </a-image>
+            </a-marker>
+
+            <a-marker class="game-marker" url="/marcadores/04.png" id="marker4" type="barcode" data-code="4" value="4"
+                registerevents="true">
+                <a-image src="./dracula.png" width="3" height="3" rotation="-90 0 0" position="0 0 -1.5 -5"
+                    scale="2 2 2 2" transparent>
+                </a-image>
+            </a-marker>
+            
+            <a-marker class="game-marker" url="/marcadores/05.png" id="marker1" type="barcode" data-code="5" value="5"
+                registerevents="true">
+                <a-image src="./dracula.png" width="3" height="3" rotation="-90 0 0" position="0 0 -1.5 -5"
+                    scale="2 2 2 2" transparent>
+                </a-image>
+            </a-marker>
+
+            <a-marker class="game-marker" url="/marcadores/06.png" id="marker6" type="barcode" data-code="6" value="6"
+                registerevents="true">
+                <a-image src="./dracula.png" width="3" height="3" rotation="-90 0 0" position="0 0 -1.5 -5"
+                    scale="2 2 2 2" transparent>
+                </a-image>
+            </a-marker>
+
+            <a-marker class="game-marker" url="/marcadores/07.png" id="marker7" type="barcode" data-code="7" value="7"
+                registerevents="true">
+                <a-image src="./dracula.png" width="3" height="3" rotation="-90 0 0" position="0 0 -1.5 -5"
+                    scale="2 2 2 2" transparent>
+                </a-image>
+            </a-marker>
+
+            <a-marker class="game-marker" url="/marcadores/08.png" id="marker8" type="barcode" data-code="8" value="8"
+                registerevents="true">
+                <a-image src="./dracula.png" width="3" height="3" rotation="-90 0 0" position="0 0 -1.5 -5"
+                    scale="2 2 2 2" transparent>
+                </a-image>
+            </a-marker>
+            
+            <a-marker class="game-marker" url="/marcadores/09.png" id="marker1" type="barcode" data-code="9" value="9"
+                registerevents="true">
+                <a-image src="./dracula.png" width="3" height="3" rotation="-90 0 0" position="0 0 -1.5 -5"
+                    scale="2 2 2 2" transparent>
+                </a-image>
+            </a-marker>
+
+            <a-marker class="game-marker" url="/marcadores/10.png" id="marker10" type="barcode" data-code="10" value="10"
+                registerevents="true">
+                <a-image src="./dracula.png" width="3" height="3" rotation="-90 0 0" position="0 0 -1.5 -5"
+                    scale="2 2 2 2" transparent>
+                </a-image>
+            </a-marker>
+
         </a-entity>
     </a-scene>
     <script>
         for (const marker of document.getElementsByClassName('game-marker')) {
-            marker.addEventListener('markerFound', (e) => {
-                setTimeout(() => {
-                    prompt("Qual o nome dessa pessoa? Só respostas erradas.");
-                }, 3000);
-            });
+            setInterval(() => {
+                marker.addEventListener('markerFound', (e) => prompt("Qual o nome dessa pessoa? Só respostas erradas."));
+            }, 3000);
+
         }
     </script>
 </body>
