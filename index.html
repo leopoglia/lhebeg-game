@@ -1,50 +1,32 @@
-<!doctype html>
-<html>
-    <head>
-        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-        <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
-        <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
 
-    <body style="margin: 0; overflow: hidden;">
-        <a-scene
-            vr-mode-ui="enabled: false;"
-            loading-screen="enabled: false;"
-            arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
-            id="scene"
-            embedded
-            gesture-detector
-        >
-            <a-marker
-                class="game-marker"
-                id="animated-marker"
-                type="barcode"
-                preset="custom"
-                url="marcadores/01.png"
-                raycaster="objects: .clickable"
-                emitevents="true"
-                cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
-            >
-                <a-image
-                    src="dracula.png"
-                    scale="1 1 1"
-                    class="clickable"
-                    rotation="-90 0 0"
-                    gesture-handler
-                ></a-image>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Easter Hunt!</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script type='text/javascript'
+        src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
+</head>
+
+<body style="margin : 0px; overflow: hidden; font-family: Monospace;">
+    <a-scene embedded vr-mode-ui="enabled: false"
+        arjs="trackingMethod: best; sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false; changeMatrixMode: cameraTransformMatrix">
+        <a-entity camera>
+            <a-marker class="game-marker" url="/marcadores/01.png" id="marker1" type="barcode" data-code="1" value="1" registerevents="true">
+                <a-image src="./dracula.png" width="3" height="3" rotation="-90 0 0" position="0 0 -1.5 -5"
+                    scale="2 2 2 2" transparent>
+                </a-image>
             </a-marker>
-
-            <a-entity camera></a-entity>
-        </a-scene>
-    </body>
-
+        </a-entity>
+    </a-scene>
     <script>
-        for (const marker of document.getElementsByClassName("game-marker")){
-            marker.addEventListener("markerFound", () => {
-                alert("Marker found");
-            });
+        for (const marker of document.getElementsByClassName('game-marker')) {
+            marker.addEventListener('markerFound', (e) => console.log(e));
         }
     </script>
+</body>
+
 </html>
