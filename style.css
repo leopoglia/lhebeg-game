@@ -25,3 +25,12 @@ div{
     align-items: center;
     justify-content: center;
 }
+
+.pontuacao{
+    font-size: 50px;
+    position: absolute;
+    margin-top: 5px;
+    margin-right: 5px;
+    top: 0;
+    right: 0px;
+}
