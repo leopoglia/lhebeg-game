@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Lhebeg Game</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script type='text/javascript'
+        src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
+</head>
+
+<body style="margin : 0px; overflow: hidden; font-family: Monospace;">
+    <a-scene embedded vr-mode-ui="enabled: false"
+        arjs="trackingMethod: best; sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false; changeMatrixMode: cameraTransformMatrix">
+        <a-entity camera>
+            <a-marker class="game-marker" url="/marcadores/01.png" id="marker1" type="barcode" data-code="1" value="1"
+                registerevents="true">
+                <a-image src="./imagens/1.png" width="3" height="3" rotation="-90 0 0" position="0 0 -1.5 -5"
+                    scale="2 2 2 2" transparent>
+                </a-image>
+            </a-marker>
+
+            <a-marker class="game-marker" url="/marcadores/02.png" id="marker2" type="barcode" data-code="2" value="2"
+                registerevents="true">
+                <a-image src="./dracula.png" width="3" height="3" rotation="-90 0 0" position="0 0 -1.5 -5"
+                    scale="2 2 2 2" transparent>
+                </a-image>
+            </a-marker>
+
+            <a-marker class="game-marker" url="/marcadores/03.png" id="marker3" type="barcode" data-code="3" value="3"
+                registerevents="true">
+                <a-image src="./dracula.png" width="3" height="3" rotation="-90 0 0" position="0 0 -1.5 -5"
+                    scale="2 2 2 2" transparent>
+                </a-image>
+            </a-marker>
+
+            <a-marker class="game-marker" url="/marcadores/04.png" id="marker4" type="barcode" data-code="4" value="4"
+                registerevents="true">
+                <a-image src="./dracula.png" width="3" height="3" rotation="-90 0 0" position="0 0 -1.5 -5"
+                    scale="2 2 2 2" transparent>
+                </a-image>
+            </a-marker>
+
+            <a-marker class="game-marker" url="/marcadores/05.png" id="marker1" type="barcode" data-code="5" value="5"
+                registerevents="true">
+                <a-image src="./dracula.png" width="3" height="3" rotation="-90 0 0" position="0 0 -1.5 -5"
+                    scale="2 2 2 2" transparent>
+                </a-image>
+            </a-marker>
+
+            <a-marker class="game-marker" url="/marcadores/06.png" id="marker6" type="barcode" data-code="6" value="6"
+                registerevents="true">
+                <a-image src="./dracula.png" width="3" height="3" rotation="-90 0 0" position="0 0 -1.5 -5"
+                    scale="2 2 2 2" transparent>
+                </a-image>
+            </a-marker>
+
+            <a-marker class="game-marker" url="/marcadores/07.png" id="marker7" type="barcode" data-code="7" value="7"
+                registerevents="true">
+                <a-image src="./dracula.png" width="3" height="3" rotation="-90 0 0" position="0 0 -1.5 -5"
+                    scale="2 2 2 2" transparent>
+                </a-image>
+            </a-marker>
+
+            <a-marker class="game-marker" url="/marcadores/08.png" id="marker8" type="barcode" data-code="8" value="8"
+                registerevents="true">
+                <a-image src="./dracula.png" width="3" height="3" rotation="-90 0 0" position="0 0 -1.5 -5"
+                    scale="2 2 2 2" transparent>
+                </a-image>
+            </a-marker>
+
+            <a-marker class="game-marker" url="/marcadores/09.png" id="marker1" type="barcode" data-code="9" value="9"
+                registerevents="true">
+                <a-image src="./dracula.png" width="3" height="3" rotation="-90 0 0" position="0 0 -1.5 -5"
+                    scale="2 2 2 2" transparent>
+                </a-image>
+            </a-marker>
+
+            <a-marker class="game-marker" url="/marcadores/10.png" id="marker10" type="barcode" data-code="10"
+                value="10" registerevents="true">
+                <a-image src="./dracula.png" width="3" height="3" rotation="-90 0 0" position="0 0 -1.5 -5"
+                    scale="2 2 2 2" transparent>
+                </a-image>
+            </a-marker>
+
+        </a-entity>
+    </a-scene>
+    <script>
+        for (const marker of document.getElementsByClassName('game-marker')) {
+            setInterval(() => {
+                marker.addEventListener('markerFound', (e) => prompt("Qual o nome dessa pessoa? Só respostas erradas."));
+            }, 3000);
+
+        }
+    </script>
+</body>
+
+</html>
