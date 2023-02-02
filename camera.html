@@ -120,6 +120,7 @@
                             if (pontuacao == 0) {
                                 if (localStorage.getItem('valor') == "7") {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 1;
+                                    localStorage.removeItem('valor');
                                 }
                             }
                             break;
