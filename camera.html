@@ -95,7 +95,7 @@
     <div id="input"
         style="display: none; position: absolute; bottom: 0; align-items: center; justify-content: center; width: 100%;">
         <input type="text">
-        <button >Enviar</button>
+        <button>Enviar</button>
     </div>
 
     <script>
@@ -103,7 +103,7 @@
             setInterval(() => {
                 marker.addEventListener('markerFound', (e) => {
                     let value = parseInt(marker.getAttribute('value'));
-                    document.getElementById('input').style = "display: block !important; position: absolute; bottom: 0; align-items: center; justify-content: center; width: 100%;";
+                    document.getElementById('input').style = "margin: 10px; display: block !important; position: absolute; bottom: 0; align-items: center; justify-content: center; width: 100%;";
 
                     switch (value) {
                         case 1:
