@@ -1,4 +1,4 @@
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,7 +8,7 @@ body{
     min-height: 100vh;
 }
 
-button{
+button {
     font-size: 20px;
     padding: 15px;
     margin: 10px;
@@ -19,18 +19,18 @@ button{
     color: #fff;
 }
 
-div{
+div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.pontuacao{
+.pontuacao {
     font-size: 50px;
     position: absolute;
-    margin-top: 5px;
-    margin-right: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
     color: greenyellow;
     top: 0;
     right: 0px;
