@@ -104,36 +104,39 @@
                     let value = parseInt(marker.getAttribute('value'));
                     document.getElementById('input').style = "margin: 10px; display: block !important; position: absolute; bottom: 0; align-items: center; justify-content: center; width: 100%;";
 
+                    pontuacao = document.querySelector('.pontuacao').innerText;
+
                     switch (value) {
                         case 1:
-                            document.querySelector('.pontuacao').innerText = 1;
+
+                            document.querySelector('.pontuacao').innerText = pontuacao + 1;
                             break;
                         case 2:
-                            document.querySelector('.pontuacao').innerText = 2;
+                            document.querySelector('.pontuacao').innerText = pontuacao + 2;
                             break;
                         case 3:
-                            document.querySelector('.pontuacao').innerText = 3;
+                            document.querySelector('.pontuacao').innerText = pontuacao + 3;
                             break;
                         case 4:
-                            document.querySelector('.pontuacao').innerText = 4;
+                            document.querySelector('.pontuacao').innerText = pontuacao + 4;
                             break;
                         case 5:
-                            document.querySelector('.pontuacao').innerText = 5;
+                            document.querySelector('.pontuacao').innerText = pontuacao + 5;
                             break;
                         case 6:
-                            document.querySelector('.pontuacao').innerText = 6;
+                            document.querySelector('.pontuacao').innerText = pontuacao + 6;
                             break;
                         case 7:
-                            document.querySelector('.pontuacao').innerText = 7;
+                            document.querySelector('.pontuacao').innerText = pontuacao + 7;
                             break;
                         case 8:
-                            document.querySelector('.pontuacao').innerText = 8;
+                            document.querySelector('.pontuacao').innerText = pontuacao + 8;
                             break;
                         case 9:
-                            document.querySelector('.pontuacao').innerText = 9;
+                            document.querySelector('.pontuacao').innerText = pontuacao + 9;
                             break;
                         case 10:
-                            document.querySelector('.pontuacao').innerText = 10;
+                            document.querySelector('.pontuacao').innerText = pontuacao + 10;
                             break;
                         default:
                             document.querySelector('.pontuacao').innerText = 0;
