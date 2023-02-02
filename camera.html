@@ -94,7 +94,7 @@
     <script>
         for (const marker of document.getElementsByClassName('game-marker')) {
             setInterval(() => {
-                marker.addEventListener('markerFound', (e) => alert(marker)
+                marker.addEventListener('markerFound', (e) => alert(marker.getAttribute('value'))
                 );
             }, 3000);
 
