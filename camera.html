@@ -108,35 +108,55 @@
 
                     switch (value) {
                         case 1:
-
-                            document.querySelector('.pontuacao').innerText = pontuacao + 1;
+                            if (pontuacao == 0) {
+                                document.querySelector('.pontuacao').innerText = pontuacao + 1;
+                            }
                             break;
                         case 2:
-                            document.querySelector('.pontuacao').innerText = pontuacao + 2;
+                            if (pontuacao == 1) {
+                                document.querySelector('.pontuacao').innerText = pontuacao + 2;
+                            }
                             break;
                         case 3:
-                            document.querySelector('.pontuacao').innerText = pontuacao + 3;
+                            if (pontuacao == 2) {
+                                document.querySelector('.pontuacao').innerText = pontuacao + 3;
+                            }
                             break;
                         case 4:
-                            document.querySelector('.pontuacao').innerText = pontuacao + 4;
+                            if (pontuacao == 3) {
+                                document.querySelector('.pontuacao').innerText = pontuacao + 4;
+                            }
                             break;
+                        break;
                         case 5:
-                            document.querySelector('.pontuacao').innerText = pontuacao + 5;
+                            if (pontuacao == 4) {
+                                document.querySelector('.pontuacao').innerText = pontuacao + 5;
+                            }
                             break;
                         case 6:
-                            document.querySelector('.pontuacao').innerText = pontuacao + 6;
+                            if (pontuacao == 5) {
+                                document.querySelector('.pontuacao').innerText = pontuacao + 6;
+                            }
                             break;
                         case 7:
-                            document.querySelector('.pontuacao').innerText = pontuacao + 7;
+                            if (pontuacao == 6) {
+                                document.querySelector('.pontuacao').innerText = pontuacao + 7;
+                            }
                             break;
                         case 8:
-                            document.querySelector('.pontuacao').innerText = pontuacao + 8;
+                            if (pontuacao == 7) {
+                                document.querySelector('.pontuacao').innerText = pontuacao + 8;
+                            }
                             break;
                         case 9:
-                            document.querySelector('.pontuacao').innerText = pontuacao + 9;
+                            if (pontuacao == 8) {
+                                document.querySelector('.pontuacao').innerText = pontuacao + 9;
+                            }
                             break;
                         case 10:
-                            document.querySelector('.pontuacao').innerText = pontuacao + 10;
+                            if (pontuacao == 9) {
+                                document.querySelector('.pontuacao').innerText = pontuacao + 10;
+                            }
                             break;
                         default:
                             document.querySelector('.pontuacao').innerText = 0;
