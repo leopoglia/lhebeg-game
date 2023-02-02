@@ -94,7 +94,44 @@
     <script>
         for (const marker of document.getElementsByClassName('game-marker')) {
             setInterval(() => {
-                marker.addEventListener('markerFound', (e) => alert(marker.getAttribute('value'))
+                marker.addEventListener('markerFound', (e) => {
+                    let value = marker.getAttribute('value');
+
+                    switch (value) {
+                        case 1:
+                            document.querySelector('.pontuacao').innerHTML = 1;
+                            break;
+                        case 2:
+                            document.querySelector('.pontuacao').innerHTML = 2;
+                            break;
+                        case 3:
+                            document.querySelector('.pontuacao').innerHTML = 3;
+                            break;
+                        case 4:
+                            document.querySelector('.pontuacao').innerHTML = 4;
+                            break;
+                        case 5:
+                            document.querySelector('.pontuacao').innerHTML = 5;
+                            break;
+                        case 6:
+                            document.querySelector('.pontuacao').innerHTML = 6;
+                            break;
+                        case 7:
+                            document.querySelector('.pontuacao').innerHTML = 7;
+                            break;
+                        case 8:
+                            document.querySelector('.pontuacao').innerHTML = 8;
+                            break;
+                        case 9:
+                            document.querySelector('.pontuacao').innerHTML = 9;
+                            break;
+                        case 10:
+                            document.querySelector('.pontuacao').innerHTML = 10;
+                            break;
+                        default:
+                            document.querySelector('.pontuacao').innerHTML = 0;
+                    }
+                }
                 );
             }, 3000);
 
