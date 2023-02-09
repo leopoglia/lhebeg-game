@@ -98,11 +98,11 @@
 
 
         for (const marker of document.getElementsByClassName('game-marker')) {
-            setInterval(() => {
-                marker.addEventListener('markerFound', (e) => {
-                    let value = parseInt(marker.getAttribute('value'));
-                    pontuacao = parseInt(document.querySelector('.pontuacao').innerText);
+            marker.addEventListener('markerFound', (e) => {
+                let value = parseInt(marker.getAttribute('value'));
+                pontuacao = parseInt(document.querySelector('.pontuacao').innerText);
 
+                setInterval(() => {
 
                     if (localStorage.getItem('check') === true) {
                         let valor = JSON.parse(prompt("Digite a resposta:"));
