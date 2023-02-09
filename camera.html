@@ -95,8 +95,6 @@
 
 
     <script>
-        
-
 
         for (const marker of document.getElementsByClassName('game-marker')) {
             marker.addEventListener('markerFound', (e) => {
@@ -104,15 +102,18 @@
                 pontuacao = parseInt(document.querySelector('.pontuacao').innerText);
 
                 setInterval(() => {
+                    if (localStorage.getItem('foi') ==  undefined || localStorage.getItem('foi') == 'true') {
+                        localStorage.setItem('foi', 'false');
+                        let valor = parseInt(prompt("Digite a resposta:"));
+                    }
 
-                        let valor = JSON.parse(prompt("Digite a resposta:"));
-                        
 
                     switch (value) {
                         case 1:
                             if (pontuacao == 0) {
                                 if (lvalor == 7) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 1;
+                                    localStorage.setItem('foi', 'true');
                                 }
                             }
                             break;
@@ -120,6 +121,7 @@
                             if (pontuacao == 1) {
                                 if (valor == 8) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 2;
+                                    localStorage.setItem('foi', 'true');
                                 }
                             }
                             break;
@@ -127,6 +129,7 @@
                             if (pontuacao == 3) {
                                 if (valor == 11) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 3;
+                                    localStorage.setItem('foi', 'true');
                                 }
                             }
                             break;
@@ -134,6 +137,7 @@
                             if (pontuacao == 6) {
                                 if (valor == 7) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 4;
+                                    localStorage.setItem('foi', 'true');
                                 }
                             }
                             break;
@@ -141,6 +145,7 @@
                             if (pontuacao == 10) {
                                 if (valor == 7) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 5;
+                                    localStorage.setItem('foi', 'true');
                                 }
                             }
                             break;
@@ -148,6 +153,7 @@
                             if (pontuacao == 15) {
                                 if (valor == 7) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 6;
+                                    localStorage.setItem('foi', 'true');
                                 }
                             }
                             break;
@@ -155,6 +161,7 @@
                             if (pontuacao == 21) {
                                 if (valor == 6) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 7;
+                                    localStorage.setItem('foi', 'true');
                                 }
                             }
                             break;
@@ -162,6 +169,7 @@
                             if (pontuacao == 28) {
                                 if (valor == 10) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 8;
+                                    localStorage.setItem('foi', 'true');
                                 }
                             }
                             break;
@@ -169,6 +177,7 @@
                             if (pontuacao == 36) {
                                 if (valor == 12) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 9;
+                                    localStorage.setItem('foi', 'true');
                                 }
                             }
                             break;
@@ -176,6 +185,7 @@
                             if (pontuacao == 45) {
                                 if (valor == 30) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 10;
+                                    localStorage.setItem('foi', 'true');
                                 }
                             }
                             break;
