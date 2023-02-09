@@ -105,95 +105,95 @@
 
                     switch (value) {
                         case 1:
-                            if (pontuacao == 0) {
+                            if (pontuacao == 0 && localStorage.getItem('foi1') == undefined) {
                                 let valor = parseInt(prompt("Digite a resposta:"));
 
                                 if (valor == 7) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 1;
-                                    localStorage.setItem('foi', 'true');
+                                    localStorage.setItem('foi1', 'true');
                                 }
                             }
                             break;
                         case 2:
-                            if (pontuacao == 1) {
+                            if (pontuacao == 1 && localStorage.getItem('foi2') == undefined) {
                                 let valor = parseInt(prompt("Digite a resposta:"));
 
                                 if (valor == 8) {
 
                                     document.querySelector('.pontuacao').innerText = pontuacao + 2;
-                                    localStorage.setItem('foi', 'true');
+                                    localStorage.setItem('foi2', 'true');
                                 }
                             }
                             break;
                         case 3:
-                            if (pontuacao == 3) {
+                            if (pontuacao == 3 && localStorage.getItem('foi3') == undefined) {
                                 let valor = parseInt(prompt("Digite a resposta:"));
                                 if (valor == 11) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 3;
-                                    localStorage.setItem('foi', 'true');
+                                    localStorage.setItem('foi3', 'true');
                                 }
                             }
                             break;
                         case 4:
-                            if (pontuacao == 6) {
+                            if (pontuacao == 6 && localStorage.getItem('foi4') == undefined) {
                                 let valor = parseInt(prompt("Digite a resposta:"));
                                 if (valor == 7) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 4;
-                                    localStorage.setItem('foi', 'true');
+                                    localStorage.setItem('foi4', 'true');
                                 }
                             }
                             break;
                         case 5:
-                            if (pontuacao == 10) {
+                            if (pontuacao == 10 && localStorage.getItem('foi5') == undefined) {
                                 let valor = parseInt(prompt("Digite a resposta:"));
                                 if (valor == 7) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 5;
-                                    localStorage.setItem('foi', 'true');
+                                    localStorage.setItem('foi5', 'true');
                                 }
                             }
                             break;
                         case 6:
-                            if (pontuacao == 15) {
+                            if (pontuacao == 15 && localStorage.getItem('foi6') == undefined) {
                                 let valor = parseInt(prompt("Digite a resposta:"));
                                 if (valor == 7) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 6;
-                                    localStorage.setItem('foi', 'true');
+                                    localStorage.setItem('foi6', 'true');
                                 }
                             }
                             break;
                         case 7:
-                            if (pontuacao == 21) {
+                            if (pontuacao == 21 && localStorage.getItem('foi7') == undefined) {
                                 let valor = parseInt(prompt("Digite a resposta:"));
                                 if (valor == 6) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 7;
-                                    localStorage.setItem('foi', 'true');
+                                    localStorage.setItem('foi7', 'true');
                                 }
                             }
                             break;
                         case 8:
-                            if (pontuacao == 28) {
+                            if (pontuacao == 28 && localStorage.getItem('foi8') == undefined) {
                                 let valor = parseInt(prompt("Digite a resposta:"));
                                 if (valor == 10) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 8;
-                                    localStorage.setItem('foi', 'true');
+                                    localStorage.setItem('foi8', 'true');
                                 }
                             }
                             break;
                         case 9:
-                            if (pontuacao == 36) {
+                            if (pontuacao == 36 && localStorage.getItem('foi9') == undefined) {
                                 let valor = parseInt(prompt("Digite a resposta:"));
                                 if (valor == 12) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 9;
-                                    localStorage.setItem('foi', 'true');
+                                    localStorage.setItem('foi9', 'true');
                                 }
                             }
                             break;
                         case 10:
-                            if (pontuacao == 45) {
+                            if (pontuacao == 45 && localStorage.getItem('foi10') == undefined) {
                                 let valor = parseInt(prompt("Digite a resposta:"));
                                 if (valor == 30) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 10;
-                                    localStorage.setItem('foi', 'true');
+                                    localStorage.setItem('foi10', 'true');
                                 }
                             }
                             break;
