@@ -92,96 +92,90 @@
         </a-entity>
     </a-scene>
 
-    <div id="input" style="display: none;">
-        <input style="height: 50px" type="text">
-        <button style="height: 50px" onclick="enviar()">Enviar</button>
-    </div>
+
 
     <script>
-
-        function enviar() {
-            let input = document.querySelector('input').value;
-            localStorage.setItem('valor', input);
-
-        }
 
 
         for (const marker of document.getElementsByClassName('game-marker')) {
             setInterval(() => {
                 marker.addEventListener('markerFound', (e) => {
                     let value = parseInt(marker.getAttribute('value'));
-                    document.getElementById('input').style = "margin: 10px; display: block !important; position: absolute; bottom: 0; align-items: center; justify-content: center; width: 100%;";
-
-
                     pontuacao = parseInt(document.querySelector('.pontuacao').innerText);
+
+                    let valor = JSON.parse(prompt("Digite a resposta:"));
+
 
                     switch (value) {
                         case 1:
+
+
+
                             if (pontuacao == 0) {
-                                if (localStorage.getItem('valor') == "7") {
+                                if (lvalor == 7) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 1;
                                 }
                             }
                             break;
                         case 2:
                             if (pontuacao == 1) {
-                                if (localStorage.getItem('valor') == "8") {
+                                if (valor == 8) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 2;
                                 }
                             }
                             break;
                         case 3:
                             if (pontuacao == 3) {
-                                if (localStorage.getItem('valor') == "11") {
+                                if (valor == 11) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 3;
                                 }
                             }
                             break;
                         case 4:
                             if (pontuacao == 6) {
-                                if (localStorage.getItem('valor') == "7") {
+                                if (valor == 7) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 4;
                                 }
                             }
                             break;
                         case 5:
                             if (pontuacao == 10) {
-                                if (localStorage.getItem('valor') == "7") {
+                                if (valor == 7) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 5;
                                 }
                             }
                             break;
                         case 6:
                             if (pontuacao == 15) {
-                                if (localStorage.getItem('valor') == "7") {
+                                if (valor == 7) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 6;
                                 }
                             }
                             break;
                         case 7:
                             if (pontuacao == 21) {
-                                if (localStorage.getItem('valor') == "6") {
+                                if (valor == 6) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 7;
                                 }
                             }
                             break;
                         case 8:
                             if (pontuacao == 28) {
-                                if (localStorage.getItem('valor') == "10") {
+                                if (valor == 10) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 8;
                                 }
                             }
                             break;
                         case 9:
                             if (pontuacao == 36) {
-                                if (localStorage.getItem('valor') == "12") {
+                                if (valor == 12) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 9;
                                 }
                             }
                             break;
                         case 10:
                             if (pontuacao == 45) {
-                                if (localStorage.getItem('valor') == "30") {
+                                if (valor == 30) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 10;
                                 }
                             }
@@ -189,7 +183,6 @@
                         default:
                             document.querySelector('.pontuacao').innerText = 0;
                     }
-                    localStorage.removeItem('valor');
                 }
                 );
             }, 3000);
