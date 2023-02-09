@@ -102,7 +102,7 @@
                 pontuacao = parseInt(document.querySelector('.pontuacao').innerText);
 
                 setInterval(() => {
-                    if (localStorage.getItem('foi') ==  undefined || localStorage.getItem('foi') == 'true') {
+                    if (localStorage.getItem('foi') == undefined || localStorage.getItem('foi') == 'true') {
                         localStorage.setItem('foi', 'false');
                         let valor = parseInt(prompt("Digite a resposta:"));
                     }
@@ -192,9 +192,12 @@
                         default:
                             document.querySelector('.pontuacao').innerText = 0;
                     }
+
                 }
                 );
             }, 3000);
+            localStorage.setItem('foi', 'true');
+
 
         }
     </script>
