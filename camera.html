@@ -97,12 +97,11 @@
     <script>
 
         for (const marker of document.getElementsByClassName('game-marker')) {
+            marker.addEventListener('markerFound', (e) => {
+                let value = parseInt(marker.getAttribute('value'));
+                pontuacao = parseInt(document.querySelector('.pontuacao').innerText);
 
-            setInterval(() => {
-
-                marker.addEventListener('markerFound', (e) => {
-                    let value = parseInt(marker.getAttribute('value'));
-                    pontuacao = parseInt(document.querySelector('.pontuacao').innerText);
+                setInterval(() => {
 
                     switch (value) {
                         case 1:
