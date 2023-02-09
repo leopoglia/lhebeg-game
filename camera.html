@@ -102,16 +102,13 @@
                 pontuacao = parseInt(document.querySelector('.pontuacao').innerText);
 
                 setInterval(() => {
-                    if (localStorage.getItem('foi') == undefined || localStorage.getItem('foi') == 'true') {
-                        localStorage.setItem('foi', 'false');
-                        let valor = parseInt(prompt("Digite a resposta:"));
-                    }
-
 
                     switch (value) {
                         case 1:
                             if (pontuacao == 0) {
-                                if (lvalor == 7) {
+                                let valor = parseInt(prompt("Digite a resposta:"));
+
+                                if (valor == 7) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 1;
                                     localStorage.setItem('foi', 'true');
                                 }
@@ -119,7 +116,10 @@
                             break;
                         case 2:
                             if (pontuacao == 1) {
+                                let valor = parseInt(prompt("Digite a resposta:"));
+
                                 if (valor == 8) {
+
                                     document.querySelector('.pontuacao').innerText = pontuacao + 2;
                                     localStorage.setItem('foi', 'true');
                                 }
@@ -127,6 +127,7 @@
                             break;
                         case 3:
                             if (pontuacao == 3) {
+                                let valor = parseInt(prompt("Digite a resposta:"));
                                 if (valor == 11) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 3;
                                     localStorage.setItem('foi', 'true');
@@ -135,6 +136,7 @@
                             break;
                         case 4:
                             if (pontuacao == 6) {
+                                let valor = parseInt(prompt("Digite a resposta:"));
                                 if (valor == 7) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 4;
                                     localStorage.setItem('foi', 'true');
@@ -143,6 +145,7 @@
                             break;
                         case 5:
                             if (pontuacao == 10) {
+                                let valor = parseInt(prompt("Digite a resposta:"));
                                 if (valor == 7) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 5;
                                     localStorage.setItem('foi', 'true');
@@ -151,6 +154,7 @@
                             break;
                         case 6:
                             if (pontuacao == 15) {
+                                let valor = parseInt(prompt("Digite a resposta:"));
                                 if (valor == 7) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 6;
                                     localStorage.setItem('foi', 'true');
@@ -159,6 +163,7 @@
                             break;
                         case 7:
                             if (pontuacao == 21) {
+                                let valor = parseInt(prompt("Digite a resposta:"));
                                 if (valor == 6) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 7;
                                     localStorage.setItem('foi', 'true');
@@ -167,6 +172,7 @@
                             break;
                         case 8:
                             if (pontuacao == 28) {
+                                let valor = parseInt(prompt("Digite a resposta:"));
                                 if (valor == 10) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 8;
                                     localStorage.setItem('foi', 'true');
@@ -175,6 +181,7 @@
                             break;
                         case 9:
                             if (pontuacao == 36) {
+                                let valor = parseInt(prompt("Digite a resposta:"));
                                 if (valor == 12) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 9;
                                     localStorage.setItem('foi', 'true');
@@ -183,6 +190,7 @@
                             break;
                         case 10:
                             if (pontuacao == 45) {
+                                let valor = parseInt(prompt("Digite a resposta:"));
                                 if (valor == 30) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 10;
                                     localStorage.setItem('foi', 'true');
