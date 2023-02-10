@@ -39,7 +39,7 @@ button:hover {
 }
 
 .background-pontuacao {
-    font-size: 40px;
+    font-size: 30px;
     position: absolute;
     color: white;
     top: 15px;
@@ -47,6 +47,10 @@ button:hover {
     display: flex;
     align-items: center;
     font-family: 'Press Start 2P', cursive !important;
+}
+
+.background-pontuacao div{
+    margin-top: 3px;
 }
 
 .background-pontuacao img {
