@@ -18,7 +18,7 @@ h1 {
     height: 100px;
 }
 
-h4{
+h4 {
     color: #fff;
     font-size: 30px;
 }
@@ -91,13 +91,13 @@ button:hover {
     color: #fff;
 }
 
-.display-flex{
+.display-flex {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 150px;
 }
 
-.final{
+.final {
     display: block;
 }
