@@ -1,23 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
 body {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     font-size: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Titan One', cursive;
     min-height: 100vh;
     margin: 0;
+    padding: 0 50px;
     background-color: #000;
+    overflow: hidden;
+}
+
+h1 {
+    margin-bottom: 10px !important;
+    margin-top: 0px !important;
 }
 
 button {
+    width: 100%;
     font-size: 20px;
-    padding: 15px;
-    margin: 10px;
+    padding: 20px;
     background-color: #000;
     border: none;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 100px;
     color: #fff;
 }
 
