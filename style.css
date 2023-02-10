@@ -51,9 +51,11 @@ button {
     top: 0;
     left: 0;
     z-index: -1;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
 }
+
+
 
 @media(max-width: 700px){
     h1{
