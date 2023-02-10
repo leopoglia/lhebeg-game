@@ -201,8 +201,12 @@
                                     document.querySelector('.pontuacao').innerText = pontuacao + 1;
                                     localStorage.setItem('foi1', 'true');
                                 } else {
-                                    alert('Resposta errada');
-                                    window.location.href = 'index.html';
+
+
+                                    document.querySelector('body').style.animation = 'shake 0.5s';
+                                    setTimeout(() => {
+                                        window.location.href = 'index.html';
+                                    }, 500);
                                 }
                             }
                             break;
@@ -220,6 +224,9 @@
                                     window.location.href = 'final.html';
                                 } else {
                                     alert('Resposta errada');
+
+
+
                                     window.location.href = 'index.html';
                                 }
                             }

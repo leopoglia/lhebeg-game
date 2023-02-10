@@ -10,6 +10,33 @@ body {
     display: grid;
 }
 
+
+@keyframes shake {
+    0% {
+        transform: translate(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translate(-5px, 5px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translate(5px, -5px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+
 h1 {
     margin-bottom: 10px !important;
     color: #fff;
@@ -102,6 +129,6 @@ button:hover {
     display: block;
 }
 
-#pontuacaofinal{
+#pontuacaofinal {
     text-align: center;
 }
