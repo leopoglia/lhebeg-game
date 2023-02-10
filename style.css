@@ -54,3 +54,9 @@ button {
     filter: blur(8px);
     -webkit-filter: blur(8px);
 }
+
+@media(max-width: 700px){
+    h1{
+        font-size: 30px;
+    }
+}
