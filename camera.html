@@ -101,6 +101,30 @@
                 let value = parseInt(marker.getAttribute('value'));
                 pontuacao = parseInt(document.querySelector('.pontuacao').innerText);
 
+
+                if(localStorage.getItem('foi1') == 'true'){
+                    pontuacao = 1;
+                } else if(localStorage.getItem('foi2') == 'true'){
+                    pontuacao = 3;
+                } else if(localStorage.getItem('foi3') == 'true'){
+                    pontuacao = 6;
+                } else if(localStorage.getItem('foi4') == 'true'){
+                    pontuacao = 10;
+                } else if(localStorage.getItem('foi5') == 'true'){
+                    pontuacao = 15;
+                } else if(localStorage.getItem('foi6') == 'true'){
+                    pontuacao = 21;
+                } else if(localStorage.getItem('foi7') == 'true'){
+                    pontuacao = 28;
+                } else if(localStorage.getItem('foi8') == 'true'){
+                    pontuacao = 36;
+                } else if(localStorage.getItem('foi9') == 'true'){
+                    pontuacao = 45;
+                } else if(localStorage.getItem('foi10') == 'true'){
+                    pontuacao = 55;
+                }
+
+
                 setInterval(() => {
 
                     switch (value) {
@@ -205,6 +229,7 @@
                 );
             }, 30000);
             localStorage.setItem('foi', 'true');
+            
 
 
         }
