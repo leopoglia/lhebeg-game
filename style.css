@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
     font-size: 50px;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', cursive !important;
     min-height: 100vh;
     margin: 0;
     background-color: #000;
@@ -37,7 +38,7 @@ button:hover {
     width: 100%;
 }
 
-.background-pontuacao{
+.background-pontuacao {
     font-size: 50px;
     position: absolute;
     color: white;
@@ -45,9 +46,10 @@ button:hover {
     right: 15px;
     display: flex;
     align-items: center;
+    font-family: 'Press Start 2P', cursive !important;
 }
 
-.background-pontuacao img{
+.background-pontuacao img {
     width: 100px;
 }
 
