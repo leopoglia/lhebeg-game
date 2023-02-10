@@ -14,8 +14,8 @@
 
 <body style="margin : 0px; overflow: hidden; font-family: Monospace;">
 
-    <div class="timer">
-        0
+    <div class="timer" id="timer">
+        00:00
     </div>
 
     <div class="background-pontuacao">
@@ -103,6 +103,22 @@
 
 
     <script>
+
+        var startTime = Date.now(); // tempo de início do timer
+        var timer = document.getElementById("timer");
+
+        function updateTimer() {
+            var elapsedTime = Date.now() - startTime; // tempo decorrido desde o início do timer
+            var minutes = Math.floor((elapsedTime % 3600000) / 60000); // minutos completos
+            var seconds = Math.floor((elapsedTime % 60000) / 1000); // segundos completos
+            var timeString = ("0" + minutes).slice(-2) + ":" + ("0" + seconds).slice(-2); // formato hh:mm:ss
+            timer.innerHTML = timeString;
+        }
+
+        var intervalId = setInterval(updateTimer, 1000); // atualiza o timer a cada segundo
+
+
+
 
         if (localStorage.getItem('foi1') == 'true') {
             pontuacao = 1;
