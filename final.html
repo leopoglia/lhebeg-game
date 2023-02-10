@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lhebeg Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="final">
+
+    <div class="container">
+
+        <h1>
+            LHEBEG GAME
+        </h1>
+
+        <div class="display-flex">
+            <h4>
+                PONTUAÇÃO:
+            </h4>
+
+            <h4 id='pontuacaofinal'>0</h4>
+        </div>
+
+        <div class="display-flex">
+            <h4>
+                TEMPO:
+            </h4>
+
+            <h4 id='tempo'>0</h4>
+        </div>
+
+
+        <div class="background-button">
+            <a href="./index.html">
+                <button>Clique para recomeçar</button>
+            </a>
+
+        </div>
+
+</body>
+
+<script>
+
+    var pontuacao = localStorage.getItem('pontuacao');
+    document.getElementById('pontuacaofinal').innerHTML = pontuacao;
+
+    var tempo = localStorage.getItem('tempo');
+    document.getElementById('tempo').innerHTML = tempo;
+
+</script>
+
+</html>

@@ -214,6 +214,10 @@
 
                                     document.querySelector('.pontuacao').innerText = pontuacao + 2;
                                     localStorage.setItem('foi2', 'true');
+                                    stopTimer();
+                                    localStorage.setItem('pontuacao', document.querySelector('.pontuacao').innerText);
+                                    localStorage.setItem('tempo', document.querySelector('#timer').innerText);
+                                    window.location.href = 'final.html';
                                 } else {
                                     alert('Resposta errada');
                                     window.location.href = 'index.html';
@@ -289,7 +293,6 @@
                                 if (valor == 30) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 10;
                                     localStorage.setItem('foi10', 'true');
-                                    stopTimer();
                                 }
                             }
                             break;
