@@ -201,10 +201,8 @@
                                     document.querySelector('.pontuacao').innerText = pontuacao + 1;
                                     localStorage.setItem('foi1', 'true');
                                 } else {
-                                    document.querySelector('body').style.animation = 'shake 0.5s';
-                                    setTimeout(() => {
-                                        window.location.href = 'index.html';
-                                    }, 500);
+                                    alert('Resposta errada');
+                                    window.location.href = 'index.html';
                                 }
                             }
                             break;
@@ -216,15 +214,8 @@
 
                                     document.querySelector('.pontuacao').innerText = pontuacao + 2;
                                     localStorage.setItem('foi2', 'true');
-                                    stopTimer();
-                                    localStorage.setItem('pontuacao', document.querySelector('.pontuacao').innerText);
-                                    localStorage.setItem('tempo', document.querySelector('#timer').innerText);
-                                    window.location.href = 'final.html';
                                 } else {
                                     alert('Resposta errada');
-
-
-
                                     window.location.href = 'index.html';
                                 }
                             }
@@ -235,6 +226,9 @@
                                 if (valor == 11) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 3;
                                     localStorage.setItem('foi3', 'true');
+                                } else {
+                                    alert('Resposta errada');
+                                    window.location.href = 'index.html';
                                 }
                             }
                             break;
@@ -244,6 +238,9 @@
                                 if (valor == 7) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 4;
                                     localStorage.setItem('foi4', 'true');
+                                } else {
+                                    alert('Resposta errada');
+                                    window.location.href = 'index.html';
                                 }
                             }
                             break;
@@ -253,6 +250,9 @@
                                 if (valor == 7) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 5;
                                     localStorage.setItem('foi5', 'true');
+                                } else {
+                                    alert('Resposta errada');
+                                    window.location.href = 'index.html';
                                 }
                             }
                             break;
@@ -262,6 +262,9 @@
                                 if (valor == 7) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 6;
                                     localStorage.setItem('foi6', 'true');
+                                } else {
+                                    alert('Resposta errada');
+                                    window.location.href = 'index.html';
                                 }
                             }
                             break;
@@ -271,6 +274,9 @@
                                 if (valor == 6) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 7;
                                     localStorage.setItem('foi7', 'true');
+                                } else {
+                                    alert('Resposta errada');
+                                    window.location.href = 'index.html';
                                 }
                             }
                             break;
@@ -280,6 +286,9 @@
                                 if (valor == 10) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 8;
                                     localStorage.setItem('foi8', 'true');
+                                } else {
+                                    alert('Resposta errada');
+                                    window.location.href = 'index.html';
                                 }
                             }
                             break;
@@ -289,6 +298,9 @@
                                 if (valor == 12) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 9;
                                     localStorage.setItem('foi9', 'true');
+                                } else {
+                                    alert('Resposta errada');
+                                    window.location.href = 'index.html';
                                 }
                             }
                             break;
@@ -298,6 +310,13 @@
                                 if (valor == 30) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 10;
                                     localStorage.setItem('foi10', 'true');
+                                    stopTimer();
+                                    localStorage.setItem('pontuacao', document.querySelector('.pontuacao').innerText);
+                                    localStorage.setItem('tempo', document.querySelector('#timer').innerText);
+                                    window.location.href = 'final.html';
+                                } else {
+                                    alert('Resposta errada');
+                                    window.location.href = 'index.html';
                                 }
                             }
                             break;
