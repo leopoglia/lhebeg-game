@@ -174,7 +174,7 @@
                                 if (valor == 7) {
                                     document.querySelector('.pontuacao').innerText = pontuacao + 1;
                                     localStorage.setItem('foi1', 'true');
-                                }else{
+                                } else {
                                     alert('Resposta errada');
                                     window.location.href = 'index.html';
                                 }
@@ -188,6 +188,9 @@
 
                                     document.querySelector('.pontuacao').innerText = pontuacao + 2;
                                     localStorage.setItem('foi2', 'true');
+                                } else {
+                                    alert('Resposta errada');
+                                    window.location.href = 'index.html';
                                 }
                             }
                             break;
