@@ -58,6 +58,8 @@ button {
     cursor: pointer;
     color: #fff;
     width: 100%;
+    font-family: 'Press Start 2P', cursive !important;
+
     height: 100px;
 }
 
